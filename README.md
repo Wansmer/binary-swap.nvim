@@ -4,7 +4,7 @@ Small plugin for neovim 0.8+ powered on [treesitter](https://github.com/nvim-tre
 - Comparison operations;
 - Mathematical operations;
 
-https://user-images.githubusercontent.com/46977173/201508642-329bb2c3-5656-45d9-8afe-f19fa0976393.mov
+https://user-images.githubusercontent.com/46977173/201508787-1b9604a1-1d0a-4feb-86d2-8b5417f4f679.mov
 
 # Installation
 
