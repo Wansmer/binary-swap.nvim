@@ -1,5 +1,9 @@
 local query = require('vim.treesitter.query')
-local ts_utils = require('nvim-treesitter.ts_utils')
+local ts_ok, ts_utils = pcall(require, 'nvim-treesitter.ts_utils')
+
+if not ts_ok then
+  return
+end
 
 local M = {}
 
