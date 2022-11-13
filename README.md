@@ -1,7 +1,6 @@
-# Binary-Swap: `123 > 0` to `0 < 123` and `1 + 2` to `2 + 1`
+# Binary-Swap: swap operands in binary expressions
 
-Small plugin for neovim 0.8+ powered on [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) for swapping operands and operators in binary expressions:
-
+Small plugin for neovim 0.8+ powered on [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) for swapping operands and operators in binary expressions: `123 > 0` to `0 < 123` and `1 + 2` to `2 + 1`
 - Comparison operations;
 - Mathematical operations;
 
