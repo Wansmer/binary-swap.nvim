@@ -1,0 +1,9 @@
+/* SWAP OPERANDS ONLY */
+.class {
+  height: clac(100px + 20%);
+}
+.class {
+  height: clac(20% + 100px);
+}
+
+/* SWAP OPERANDS AND OPERATOR */

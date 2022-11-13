@@ -1,6 +1,8 @@
 local u = require('tests.utils')
 
 local PATH_JS = './tests/langs/index.js'
+local PATH_CSS = './tests/langs/index.css'
+local PATH_LUA = './tests/langs/index.lua'
 
 local test_data = {
   {
@@ -65,6 +67,51 @@ local test_data = {
     cursor = { 21, 20 },
     expected = { 21, 22 },
     result = { 20, 21 },
+  },
+  {
+    desc = 'lang "%s", func "%s", "+" operator',
+    path = PATH_LUA,
+    func = 'swap_operands',
+    lang = 'lua',
+    cursor = { 2, 25 },
+    expected = { 2, 3 },
+    result = { 1, 2 },
+  },
+  {
+    desc = 'lang "%s", func "%s", ">" operator',
+    path = PATH_LUA,
+    func = 'swap_operands',
+    lang = 'lua',
+    cursor = { 5, 14 },
+    expected = { 5, 6 },
+    result = { 4, 5 },
+  },
+  {
+    desc = 'lang "%s", func "%s", ">" operator',
+    path = PATH_LUA,
+    func = 'swap_operands_with_operator',
+    lang = 'lua',
+    cursor = { 9, 14 },
+    expected = { 9, 10 },
+    result = { 8, 9 },
+  },
+  {
+    desc = 'lang "%s", func "%s", ">" operator',
+    path = PATH_LUA,
+    func = 'swap_operands_with_operator',
+    lang = 'lua',
+    cursor = { 12, 14 },
+    expected = { 12, 13 },
+    result = { 11, 12 },
+  },
+  {
+    desc = 'lang "%s", func "%s", "+" operator',
+    path = PATH_CSS,
+    func = 'swap_operands',
+    lang = 'css',
+    cursor = { 3, 19 },
+    expected = { 5, 6 },
+    result = { 2, 3 },
   },
 }
 
