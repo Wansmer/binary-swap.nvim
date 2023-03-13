@@ -58,6 +58,11 @@ local function swap_operands(operands, swap_operator)
   local replacement = {}
   for idx = #operands, 1, -1 do
     local text = query.get_node_text(operands[idx], 0, { concat = false })
+
+    if type(text) == 'string' then
+      text = vim.split(text, '\n')
+    end
+
     local reversed_idx = #operands - idx + 1
 
     if swap_operator and idx == OPERATOR_INDEX then
