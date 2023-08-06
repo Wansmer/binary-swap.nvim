@@ -83,6 +83,9 @@ end
 ---Format and replace binary expression under cursor
 ---@param swap_operator? boolean Swap operator to opposite or not
 function M.format_and_replace(swap_operator)
+  local parser = vim.treesitter.get_parser(0)
+  parser:parse()
+
   local node = ts_utils.get_node_at_cursor(0)
   local binary_expression = get_binary_node(node)
   if binary_expression then
